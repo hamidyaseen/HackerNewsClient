@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./desktop.component.scss']
 })
 export class DesktopComponent implements OnInit {
-  title = 'HackerNews';
+
+  title = 'HackerNewsClient';
   constructor() { }
 
   ngOnInit(): void {
