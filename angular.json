@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "fe1d6e4a-3b79-4348-b053-8aac08358bc2"
+    "analytics": "0b4875c6-35bf-4fbf-b7bf-08a2d951f684"
   },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "HackerNews": {
+    "HackerNewsClient": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/hacker-news",
+            "outputPath": "dist/hacker-news-client",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -75,10 +75,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "HackerNews:build:production"
+              "browserTarget": "HackerNewsClient:build:production"
             },
             "development": {
-              "browserTarget": "HackerNews:build:development"
+              "browserTarget": "HackerNewsClient:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -86,7 +86,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "HackerNews:build"
+            "browserTarget": "HackerNewsClient:build"
           }
         },
         "test": {
@@ -110,5 +110,5 @@
       }
     }
   },
-  "defaultProject": "HackerNews"
+  "defaultProject": "HackerNewsClient"
 }
